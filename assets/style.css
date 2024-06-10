@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+.home{
+    background: linear-gradient(rgba(0,8,20,0.6),rgba(0,8,20,0.6)),url(./images/parcking.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 20px 40px;
+}
+.rooms-home{
+    background: linear-gradient(rgba(0,8,20,0.6),rgba(0,8,20,0.6)),url(./images/chambre/chambre\ double003.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 20px 40px;
+}
+.restaurent-home{
+    background: linear-gradient(rgba(0,8,20,0.6),rgba(0,8,20,0.6)),url(./images/resto/resto1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 20px 40px;
+}
+.gym-home{
+    background: linear-gradient(rgba(0,8,20,0.6),rgba(0,8,20,0.6)),url(./images/salle\ de\ sport/gym1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 20px 40px;
+}
+.reserve-home{
+    background: linear-gradient(rgba(0,8,20,0.6),rgba(0,8,20,0.6)),url(./images/resption.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 20px 40px;
+}
+.home .navbar , .rooms-home .navbar, .restaurent-home .navbar, .gym-home .navbar, .reserve-home .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+    background-color: #001D3D;
+    border-radius: 10px;
+}
+.navbar img{
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-left: 75px;
+}
+.navbar a{
+    color: white;
+}
+.navbar ul a:hover{
+    color: #FFC300;
+}
+.navbar .reserve-btn{
+    background-color: #FFC300;
+    color: #001D3D;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    border: 2px solid #FFC300;
+    text-align: center;
+}
+.navbar .reserve-btn:hover{
+    background-color: #001D3D;
+    color: #FFC300;
+}
+#menu-btn{
+    display: none;
+    font-size: 35px;
+    color: white;
+}
+.home .center , .rooms-home .center, .restaurent-home .center, .gym-home .center, .reserve-home .center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    height: 70vh;
+}
+.home .center h3 , .rooms-home .center h3, .restaurent-home .center h3, .gym-home .center h3, .reserve-home .center h3{
+    font-size: 3rem;
+    font-weight: 400;
+    color: white;
+}
+.home .center p , .rooms-home .center p, .restaurent-home .center p, .gym-home .center p, .reserve-home .center p{
+    color: white;
+    font-size: 2rem;
+}
+.home .center a , .rooms-home .center a, .restaurent-home .center a, .gym-home .center a, .reserve-home .center a{
+    color: #001D3D;
+    font-size: 1.2rem;
+    background-color: #FFC300;
+    padding: 15px 60px;
+    border-radius: 10px;
+}
+.home .center a:hover , .rooms-home .center a:hover, .restaurent-home .center a:hover, .gym-home .center a:hover, .reserve-home .center a:hover{
+    background-color: transparent;
+    color: #FFC300;
+    border: 2px solid #FFC300;
+}
+.img-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 40px;
+}
+.about .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+.about .left h1{
+    color: #001D3D;
+    font-size: 3rem;
+    font-weight: 400;
+}
+.about .left p{
+    font-size: 1.5rem;
+    line-height: 150%;
+}
+.about .left a{
+    color: #001D3D;
+    background-color: #FFC300;
+    padding: 15px 60px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+.about .left a:hover{
+    background-color: #001D3D;
+    color: #FFC300;
+}
+.about .right img{
+    width: 400px;
+    border-radius: 10px;
+}
+.our-services{
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+.our-services h1{
+    color: #001D3D;
+    font-size: 3rem;
+    font-weight: 400;
+}
+.our-services h2{
+    color: #d3a303;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.our-services .services{
+    display: flex;
+    margin: 20px 0px;
+}
+.our-services .services .service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.our-services .services .service i{
+    font-size: 5rem;
+    color: #d3a303;
+}
+.offer{
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.offer h1{
+    color: #001D3D;
+    font-size: 3rem;
+    font-weight: 400;
+}
+.offer h2{
+    color: #d3a303;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.offer .offers{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+}
+.offers .offer-title{
+    color: #001D3D;
+    font-size: 3rem;
+    font-weight: 400;
+}
+.offers p{
+    font-size: 1.3rem;
+    line-height: 150%;
+}
+.offers a{
+    color: #001D3D;
+    background-color: #FFC300;
+    padding: 15px 60px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+.offers a:hover{
+    background-color: #001D3D;
+    color: #FFC300;
+}
+.offers .ofr{
+    display: flex;
+    gap: 50px;
+}
+.offers .ofr .left img{
+    width: 600px;
+    border-radius: 10px;
+}
+.offers .ofr .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: flex-start;
+}
+.offers .ofr1{
+    display: flex;
+    gap: 50px;
+}
+.offers .ofr1 .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: flex-start;
+}
+.offers .ofr1 .right img{
+    width: 600px;
+    border-radius: 10px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    background-color: #001D3D;
+    padding: 40px;
+    text-align: center;
+}
+.footer img{
+    width: 200px;
+}
+.footer .links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer .links a{
+    color: white;
+}
+.footer .links a:hover{
+    color: #FFC300;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+.contact a{
+    color: white;
+}
+.contact a:hover{
+    color: #FFC300;
+}
+.contact .social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 15px;
+}
+.contact .social-icons i{
+    font-size: 1.5rem;
+}
+.rooms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+}
+.rooms h1{
+    color: #001D3D;
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+}
+.rooms .double-room , .rooms .single-room{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+}
+.rooms .double-room h1 , .rooms .single-room h1{
+    font-size: 2.5rem;
+    color: #d3a303;
+}
+.rooms .double-room img , .rooms .single-room img{
+    width: 400px;
+    border-radius: 10px;
+}
+.rooms .double-room .room-imgs , .rooms .single-room .room-imgs{
+    display: flex;
+    gap: 50px;
+}
+.reserve-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 20px;
+}
+.reserve-div p{
+    font-size: 2rem;
+    color: #001D3D;
+}
+.reserve-div a{
+    background-color: #FFC300;
+    color: #001D3D;
+    padding: 10px 40px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 350;
+}
+.reserve-div a:hover{
+    background-color: #001D3D;
+    color: #FFC300;
+}
+.restaurent , .cafetiria{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+}
+.restaurent h1 , .cafetiria h1{
+    color: #001D3D;
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+}
+.restaurent p , .cafetiria p{
+    font-size: 2rem;
+    color: #d3a303;
+    text-align: center;
+}
+.restaurent .restaurent-imgs , .cafetiria .cafetiria-imgs{
+    display: flex;
+    gap: 40px;
+}
+.restaurent .restaurent-imgs img , .cafetiria .cafetiria-imgs img{
+    width: 400px;
+    border-radius: 10px;
+}
+.gym{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+}
+.gym h1{
+    color: #001D3D;
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+}
+.gym p{
+    font-size: 2rem;
+    color: #d3a303;
+    text-align: center;
+}
+.gym .gym-imgs{
+    display: flex;
+    gap: 40px;
+}
+.gym .gym-imgs img{
+    width: 400px;
+    border-radius: 10px;
+}
+.reservation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    gap: 40px;
+}
+.reservation h1{
+    color: #001D3D;
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+}
+.reservation p{
+    font-size: 2rem;
+    color: #d3a303;
+    text-align: center;
+}
+.reservation .reservation-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.reservation .reservation-form form label{
+    font-size: 1.2rem;
+    color: #001D3D;
+}
+.reservation .reservation-form form input , .reservation .reservation-form form select{
+    padding: 10px 40px;
+    width: 400px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #001D3D;
+}
+.reservation .reservation-form form .reserve-button{
+    border: none;
+    background-color: #FFC300;
+    color: #001D3D;
+    font-size: 1.2rem;
+}
+.reservation .reservation-form form .reserve-button:hover{
+    background-color: #001D3D;
+    color: #FFC300;
+    cursor: pointer;
+}
+.result{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.result .the-result{
+    color: #001D3D;
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+}
+@media only screen and (max-width:1000px){
+    #menu-btn{
+        display: flex;
+    }
+    .home .navbar , .rooms-home .navbar, .restaurent-home .navbar, .gym-home .navbar, .reserve-home .navbar{
+        padding: 0px 20px;
+    }
+    .navbar ul{
+        flex-direction: column;
+        background-color: #001D3D;
+        padding: 20px 40px;
+        border-radius: 10px;
+        position: absolute;
+        top: 13%;
+        left: -100%;
+    }
+    .navbar .show{
+        right: 10%;
+        left: 30%;
+    }
+    .navbar .reserve-btn{
+        font-size: 0.7rem;
+        /* font-weight: 500; */
+        padding: 8px;
+    }
+    .home .center , .rooms-home .center, .restaurent-home .center, .gym-home .center, .reserve-home .center{
+        height: 80vh;
+    }
+    .about , .our-services .services , .rooms .double-room .room-imgs , .rooms .single-room .room-imgs , .restaurent .restaurent-imgs , .cafetiria .cafetiria-imgs , .gym .gym-imgs{
+        flex-direction: column;
+    }
+    .about .left{
+        align-items: center;
+        text-align: center;
+    }
+    .offer{
+        text-align: center;
+    }
+    .offers .ofr{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .offers .ofr .right , .offers .ofr1 .left{
+        align-items: center;
+        text-align: center;
+    }
+    .offers .ofr1{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .offers .ofr .left img , .offers .ofr1 .right img , .rooms .double-room img , .rooms .single-room img , .restaurent .restaurent-imgs img , .cafetiria .cafetiria-imgs img , .gym .gym-imgs img , .about .right img{
+        width: 300px;
+    }
+    .footer{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .reservation .reservation-form form input , .reservation .reservation-form form select{
+        width: 300px;
+    }
+    .result .the-result{
+        font-size: 2rem;
+        line-height: 50px;
+    }
+    .reserve-div a{
+        padding: 10px 20px;
+    }
+}
